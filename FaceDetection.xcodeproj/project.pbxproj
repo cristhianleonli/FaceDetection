@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F4FBE7A224A4D530058279D /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FBE75224A4D530058279D /* FaceDetector.swift */; };
+		9F4FBE7B224A4D530058279D /* Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FBE76224A4D530058279D /* Eye.swift */; };
+		9F4FBE7C224A4D530058279D /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FBE77224A4D530058279D /* Mouth.swift */; };
+		9F4FBE7D224A4D530058279D /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FBE78224A4D530058279D /* Face.swift */; };
+		9F4FBE7E224A4D530058279D /* FaceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FBE79224A4D530058279D /* FaceProtocol.swift */; };
 		9FB4AA2B224A3B8500EB1095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4AA2A224A3B8500EB1095 /* AppDelegate.swift */; };
 		9FB4AA2D224A3B8500EB1095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4AA2C224A3B8500EB1095 /* ViewController.swift */; };
 		9FB4AA30224A3B8500EB1095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4AA2E224A3B8500EB1095 /* Main.storyboard */; };
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F4FBE75224A4D530058279D /* FaceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		9F4FBE76224A4D530058279D /* Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eye.swift; sourceTree = "<group>"; };
+		9F4FBE77224A4D530058279D /* Mouth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mouth.swift; sourceTree = "<group>"; };
+		9F4FBE78224A4D530058279D /* Face.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		9F4FBE79224A4D530058279D /* FaceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceProtocol.swift; sourceTree = "<group>"; };
 		9FB4AA27224A3B8500EB1095 /* FaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB4AA2A224A3B8500EB1095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FB4AA2C224A3B8500EB1095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +69,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F4FBE7F224A4D590058279D /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				9F4FBE76224A4D530058279D /* Eye.swift */,
+				9F4FBE78224A4D530058279D /* Face.swift */,
+				9F4FBE75224A4D530058279D /* FaceDetector.swift */,
+				9F4FBE79224A4D530058279D /* FaceProtocol.swift */,
+				9F4FBE77224A4D530058279D /* Mouth.swift */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
 		9FB4AA1E224A3B8500EB1095 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,7 @@
 				9FB4AA31224A3B8700EB1095 /* Assets.xcassets */,
 				9FB4AA33224A3B8700EB1095 /* LaunchScreen.storyboard */,
 				9FB4AA36224A3B8700EB1095 /* Info.plist */,
+				9F4FBE7F224A4D590058279D /* FaceDetection */,
 			);
 			path = FaceDetection;
 			sourceTree = "<group>";
@@ -233,7 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB4AA2D224A3B8500EB1095 /* ViewController.swift in Sources */,
+				9F4FBE7A224A4D530058279D /* FaceDetector.swift in Sources */,
 				9FB4AA2B224A3B8500EB1095 /* AppDelegate.swift in Sources */,
+				9F4FBE7B224A4D530058279D /* Eye.swift in Sources */,
+				9F4FBE7E224A4D530058279D /* FaceProtocol.swift in Sources */,
+				9F4FBE7D224A4D530058279D /* Face.swift in Sources */,
+				9F4FBE7C224A4D530058279D /* Mouth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
