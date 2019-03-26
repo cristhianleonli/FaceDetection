@@ -13,6 +13,7 @@
 		9FB4AA32224A3B8700EB1095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4AA31224A3B8700EB1095 /* Assets.xcassets */; };
 		9FB4AA35224A3B8700EB1095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4AA33224A3B8700EB1095 /* LaunchScreen.storyboard */; };
 		9FB4AA40224A3B8800EB1095 /* FaceDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4AA3F224A3B8800EB1095 /* FaceDetectionTests.swift */; };
+		9FB4AA4E224A3D2200EB1095 /* CameraView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB4AA4D224A3D2200EB1095 /* CameraView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9FB4AA3B224A3B8800EB1095 /* FaceDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB4AA3F224A3B8800EB1095 /* FaceDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionTests.swift; sourceTree = "<group>"; };
 		9FB4AA41224A3B8800EB1095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB4AA4D224A3D2200EB1095 /* CameraView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CameraView.framework; path = Carthage/Build/iOS/CameraView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB4AA4E224A3D2200EB1095 /* CameraView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				9FB4AA29224A3B8500EB1095 /* FaceDetection */,
 				9FB4AA3E224A3B8800EB1095 /* FaceDetectionTests */,
 				9FB4AA28224A3B8500EB1095 /* Products */,
+				9FB4AA4C224A3D2200EB1095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +100,14 @@
 			path = FaceDetectionTests;
 			sourceTree = "<group>";
 		};
+		9FB4AA4C224A3D2200EB1095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FB4AA4D224A3D2200EB1095 /* CameraView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +118,7 @@
 				9FB4AA23224A3B8500EB1095 /* Sources */,
 				9FB4AA24224A3B8500EB1095 /* Frameworks */,
 				9FB4AA25224A3B8500EB1095 /* Resources */,
+				9FB4AA4B224A3CFC00EB1095 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -191,6 +204,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FB4AA4B224A3CFC00EB1095 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CameraView.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FB4AA23224A3B8500EB1095 /* Sources */ = {
@@ -361,6 +396,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FaceDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FaceDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
